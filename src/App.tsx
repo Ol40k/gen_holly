@@ -6,7 +6,7 @@ import { ThankYouPage } from './components/ThankYouPage/ThankYouPage';
 import { NotFoundPage } from './components/NotFoundPage/NotFoundPage';
 
 import './App.scss';
-// config, dvh
+
 function App() {
   const router = createBrowserRouter([
     {
