@@ -1,0 +1,17 @@
+@import '../../styles/main.scss';
+
+.not-found {
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @extend .full-screen-height;
+  }
+
+  &__title {
+    font-size: $paddingXXl;
+    text-align: center;
+    color: $white;
+  }
+}

@@ -1,0 +1,44 @@
+// Sizes
+$space: 3px;
+$space2x: 6px;
+$space3x: 9px;
+$space4x: 12px;
+$space5x: 15px;
+$space6x: 18px;
+$space7x: 21px;
+$space8x: 24px;
+$space9x: 27px;
+$space10x: 30px;
+$space12x: 36px;
+$space15x: 45px;
+$space18x: 54px;
+$space21x: 63px;
+$space23x: 69px;
+$space25x: 75px;
+$space29x: 87px;
+$space48x: 144px;
+
+// Paddings
+$paddingSm: 16px;
+$padding: 20px;
+$paddingXl: 26px;
+$paddingXXl: 40px;
+
+// Borders
+$border: 1px;
+$borderXl: 2px;
+$borderRadiusSm: 8px;
+$borderRadius: 16px;
+
+// Grid
+$mobileM: 424px;
+$tablet: 768px;
+$laptop: 1024px;
+
+// Layout
+.full-screen-height {
+  height: 100vh;
+  @supports (height: 100dvh) {
+    height: 100dvh;
+  }
+}

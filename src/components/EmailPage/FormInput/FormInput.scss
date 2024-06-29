@@ -1,0 +1,32 @@
+@import '../../../styles/main.scss';
+
+.form-input {
+  width: 100%;
+  height: $space25x;
+  padding-inline: $padding;
+  background-color: $lightPurple;
+  color: $white;
+  border: $borderXl solid transparent;
+  border-radius: $paddingSm;
+
+  &::placeholder {
+    color: $mutedGrey;
+    opacity: 0.5;
+  }
+
+  &:focus {
+    outline: $border solid $highlightPinkLight;
+  }
+
+  &--invalid {
+    border: 2px solid $error;
+  }
+
+  &__wrapper {
+    position: relative;
+    .error {
+      position: absolute;
+      left: $space8x;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import '../../styles/main.scss';
+
+.quiz {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: $space10x;
+    padding-bottom: $padding;
+    padding-inline: $space + 1;
+
+    @extend .full-screen-height;
+  }
+}

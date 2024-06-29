@@ -1,0 +1,33 @@
+@import '../../styles//main.scss';
+
+.thank-you-page {
+  @extend .full-screen-height;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: $space48x;
+  padding-bottom: $padding;
+
+  &__message {
+    font-size: $space6x;
+    font-weight: $semi-bold;
+    line-height: $space8x;
+    color: $white;
+    text-align: center;
+  }
+
+  &__checkmark {
+    margin-top: $space21x;
+  }
+
+  &__download-wrapper {
+    margin-top: auto;
+    margin-bottom: $space10x;
+  }
+
+  &__finish-btn {
+    width: 100%;
+  }
+}

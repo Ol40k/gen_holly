@@ -1,0 +1,46 @@
+@import '../../styles/main.scss';
+
+.radial-loader {
+  position: relative;
+  text-align: center;
+
+  &__wrapper {
+    @extend .full-screen-height;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: $space10x;
+  }
+
+  &__bg {
+    fill: $darkPurple;
+    stroke: $primaryGrey;
+  }
+
+  &__progress {
+    fill: transparent;
+    stroke: $primaryPink;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: all 0.1s linear;
+  }
+
+  &__percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $white;
+    font-size: $font-size-12;
+    font-weight: $black;
+  }
+
+  &__text {
+    max-width: 200px;
+    font-size: $font-size-4;
+    color: $white;
+    line-height: $space8x;
+    text-align: center;
+  }
+}

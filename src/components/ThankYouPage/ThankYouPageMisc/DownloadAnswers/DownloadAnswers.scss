@@ -1,0 +1,10 @@
+@import '../../../../styles/main.scss';
+
+.download-answers-btn {
+  display: flex;
+  align-items: center;
+  gap: $space5x + 1;
+  background-color: transparent;
+  color: $white;
+  font-size: $font-size-4;
+}

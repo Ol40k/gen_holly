@@ -1,0 +1,17 @@
+@import '../../styles/main.scss';
+
+.step-title {
+  padding-bottom: $paddingSm;
+  max-width: 290px;
+  margin-inline: auto;
+
+  font-size: $font-size-7;
+  font-weight: $bold;
+  color: $secondaryGrey;
+  text-align: center;
+
+  @media (min-width:$tablet) {
+    max-width: 500px;
+    font-size: $font-size-9;
+  }
+}

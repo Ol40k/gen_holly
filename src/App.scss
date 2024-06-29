@@ -1,0 +1,30 @@
+@import './styles/main.scss';
+
+body {
+  background-color: $darkPurple;
+}
+
+.main {
+  padding-inline: $padding;
+  margin-inline: auto;
+  max-width: $tablet;
+}
+
+.highlight {
+  color: $primaryPink;
+}
+
+.secondary-text {
+  font-size: $space6x - 1;
+  line-height: $space8x;
+  color: $mutedGrey;
+  text-align: center;
+}
+
+.link {
+  color: $highlightPinkLight;
+}
+
+.error {
+  color: $error;
+}

@@ -1,0 +1,36 @@
+@import '../../../styles/main.scss';
+
+.email-form {
+  @extend .full-screen-height;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: $space29x - 1;
+  padding-bottom: $padding;
+
+  &__title {
+    font-size: $space9x + 1;
+    font-weight: $bold;
+    color: $secondaryGrey;
+    text-align: center;
+  }
+
+  @media (min-width: $tablet) {
+    &__title {
+      font-size: $space12x;
+    }
+  }
+
+  .secondary-text {
+    padding-top: $space4x;
+    padding-bottom: $space18x;
+  }
+
+  &__legal-compliance {
+    margin-top: $space18x;
+    font-size: $space4x;
+    font-weight: $regular;
+    color: $darkGrey;
+    text-align: center;
+  }
+}

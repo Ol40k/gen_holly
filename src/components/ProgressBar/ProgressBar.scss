@@ -1,0 +1,47 @@
+@import '../../styles/main.scss';
+
+.progress-bar {
+  z-index: 3;
+  position: relative;
+  width: 100%;
+  padding-bottom: $space15x;
+
+  &__data {
+    display: block;
+    margin-bottom: $space4x;
+    font-weight: $bold;
+    font-size: $space6x;
+    color: $primaryGrey;
+    text-align: center;
+  }
+
+  &__value,
+  &__track {
+    height: $space + 1;
+    border-radius: 100px;
+  }
+
+  &__value {
+    position: absolute;
+    z-index: 3;
+    width: 0;
+    background-color: $primaryPink;
+    transition: all .4s linear;
+  }
+
+  &__track {
+    position: relative;
+    z-index: 2;
+    background-color: $primaryGrey;
+  }
+
+  &__go-back-btn {
+    position: absolute;
+    top: $space - 1;
+    left: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,36 @@
+@import '../../../../styles/main.scss';
+
+.single-answer {
+  border-radius: $borderRadius;
+  color: $white;
+  background-color: $lightPurple;
+
+  &--single {
+    width: 100%;
+    padding: $space6x $padding;
+    text-align: start;
+  }
+
+  &--single-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: $space3x + 1;
+    width: 100%;
+    height: 144px;
+    text-align: center;
+
+    @media (min-width: $tablet) {
+      height: 200px;
+    }
+  }
+
+  @media (min-width: $laptop) {
+    &:hover {
+      background-color: lighten($lightPurple, 10%);
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  }
+}
